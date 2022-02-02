@@ -1,0 +1,9 @@
+{
+  "type": "blasting",
+  "ingredient": {
+    "item": "tinkerscaramel:caramel_block"
+  },
+  "result": "tinkerscaramel:caramel_crystal",
+  "experience": 0.1,
+  "cookingtime": 350
+}

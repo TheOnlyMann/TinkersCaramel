@@ -1,0 +1,20 @@
+{
+  "comment0": "misc",
+  "itemGroup.tinkerscarameltab": "Tinkers Caramel",
+
+  "comment1": "items",
+  "item.tinkerscaramel.sugar_shard": "Sugar Shard",
+  "item.tinkerscaramel.caramel_crystal": "Caramel Crystal",
+
+  "item.tinkerscaramel.caramel_apple": "Caramel Apple",
+
+  "item.tinkerscaramel.infused_caramel_earthslime": "Slime Infused Caramel",
+  "item.tinkerscaramel.infused_caramel_skyslime": "Skyslime Infused Caramel",
+  "item.tinkerscaramel.infused_caramel_blood": "Blood Infused Caramel",
+  "item.tinkerscaramel.infused_caramel_ichor": "Ichor Infused Caramel",
+  "item.tinkerscaramel.infused_caramel_enderslime": "Enderslime Infused Caramel",
+  "item.tinkerscaramel.infused_caramel_magma_cream": "Magma Cream Infused Caramel",
+
+  "comment2": "blocks",
+  "block.tinkerscaramel.caramel_block": "Block of Caramel"
+}
