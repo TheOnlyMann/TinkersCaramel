@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "tinkerscaramel:sugar_glass"
+  },
+  "result": {
+    "fluid": "tinkerscaramel:molten_sugar",
+    "amount": 800
+  },
+  "temperature": 120,
+  "time": 680
+}

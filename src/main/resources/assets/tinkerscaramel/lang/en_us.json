@@ -1,6 +1,8 @@
 {
   "comment0": "misc",
   "itemGroup.tinkerscarameltab": "Tinkers Caramel",
+  "material.tinkerscaramel.glazed_pig_iron": "Glazed Pig Iron",
+  "material.tinkerscaramel.glazed_pig_iron.flavor": "How thick was the glaze though?",
 
   "comment1": "items",
   "item.tinkerscaramel.sugar_shard": "Sugar Shard",
@@ -16,5 +18,9 @@
   "item.tinkerscaramel.infused_caramel_magma_cream": "Magma Cream Infused Caramel",
 
   "comment2": "blocks",
-  "block.tinkerscaramel.caramel_block": "Block of Caramel"
+  "block.tinkerscaramel.caramel_block": "Block of Caramel",
+  "block.tinkerscaramel.sugar_glass": "Sugar Glass",
+  "block.tinkerscaramel.sugar_glass_pane": "Sugar Glass Pane",
+
+  "comment3": "to"
 }

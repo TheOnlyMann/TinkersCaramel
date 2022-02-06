@@ -1,13 +1,11 @@
 package com.theonlymann.tinkerscaramel.init;
 
 import com.theonlymann.tinkerscaramel.TinkersCaramel;
-import net.minecraft.block.AbstractBannerBlock;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
+import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.fluid.FlowingFluid;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
@@ -39,4 +37,7 @@ public class BlockInit {
                     .strength(0.0f,0.0f)
                     .harvestLevel(-1)
                     .sound(SoundType.GLASS)));
+
+    //fluid blocks
+
 }

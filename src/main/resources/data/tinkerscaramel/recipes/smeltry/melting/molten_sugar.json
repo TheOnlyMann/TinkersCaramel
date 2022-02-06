@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "minecraft:sugar"
+  },
+  "result": {
+    "fluid": "tinkerscaramel:molten_sugar",
+    "amount": 200
+  },
+  "temperature": 120,
+  "time": 400
+}

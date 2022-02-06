@@ -1,0 +1,19 @@
+
+{
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "tag": "tinkerscaramel:molten_caramel",
+      "amount": 5
+    },
+    {
+      "tag": "tconstruct:magma",
+      "amount": 1
+    }
+  ],
+  "result": {
+    "fluid": "tinkerscaramel:molten_caramel_magma_cream",
+    "amount": 5
+  },
+  "temperature": 270
+}

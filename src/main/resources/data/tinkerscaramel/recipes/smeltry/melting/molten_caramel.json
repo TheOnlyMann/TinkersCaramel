@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "tinkerscaramel:caramel_block"
+  },
+  "result": {
+    "fluid": "tinkerscaramel:molten_caramel",
+    "amount": 1000
+  },
+  "temperature": 330,
+  "time": 350
+}

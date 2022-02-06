@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:casting_basin",
+  "fluid": {
+    "tag": "tinkerscaramel:molten_caramel_blood",
+    "amount": 1000
+  },
+  "result": "tinkerscaramel:infused_caramel_blood",
+  "cooling_time": 420
+}

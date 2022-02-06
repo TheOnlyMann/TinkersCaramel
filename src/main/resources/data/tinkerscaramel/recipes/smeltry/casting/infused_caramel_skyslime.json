@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:casting_basin",
+  "fluid": {
+    "tag": "tinkerscaramel:molten_caramel_skyslime",
+    "amount": 1000
+  },
+  "result": "tinkerscaramel:infused_caramel_skyslime",
+  "cooling_time": 420
+}

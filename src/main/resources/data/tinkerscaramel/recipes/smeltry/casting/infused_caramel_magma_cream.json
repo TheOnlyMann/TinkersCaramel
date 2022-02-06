@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:casting_basin",
+  "fluid": {
+    "tag": "tinkerscaramel:molten_caramel_magma_cream",
+    "amount": 1000
+  },
+  "result": "tinkerscaramel:infused_caramel_magma_cream",
+  "cooling_time": 420
+}

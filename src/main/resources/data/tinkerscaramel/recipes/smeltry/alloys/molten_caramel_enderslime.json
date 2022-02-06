@@ -1,0 +1,19 @@
+
+{
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "tag": "tinkerscaramel:molten_caramel",
+      "amount": 5
+    },
+    {
+      "tag": "tconstruct:ender_slime",
+      "amount": 1
+    }
+  ],
+  "result": {
+    "fluid": "tinkerscaramel:molten_caramel_enderslime",
+    "amount": 5
+  },
+  "temperature": 270
+}

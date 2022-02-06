@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:casting_basin",
+  "fluid": {
+    "tag": "tinkerscaramel:molten_caramel_enderslime",
+    "amount": 1000
+  },
+  "result": "tinkerscaramel:infused_caramel_enderslime",
+  "cooling_time": 420
+}

@@ -42,6 +42,7 @@ public class TinkersCaramel
 
         ItemInit.ITEMS.register(bus);
         BlockInit.BLOCKS.register(bus);
+        FluidInit.FLUIDS.register(bus);
 
         MinecraftForge.EVENT_BUS.register(this);
 
