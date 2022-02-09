@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_basin",
+  "cast": {
+    "item": "tinkerscaramel:sugar_shard"
+  },
+  "cast_consumed": true,
+  "fluid": {
+    "fluidTag": "tinkerscaramel:molten_sugar",
+    "amount": 800
+  },
+  "result": "tinkerscaramel:sugar_clear_glass",
+  "cooling_time": 90
+}

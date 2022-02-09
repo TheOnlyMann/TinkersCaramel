@@ -57,6 +57,7 @@ public class TinkersCaramel
         event.enqueueWork(() -> {
             RenderTypeLookup.setRenderLayer(BlockInit.SUGAR_GLASS.get(), RenderType.cutout());
             RenderTypeLookup.setRenderLayer(BlockInit.SUGAR_CLEAR_GLASS.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(BlockInit.SUGAR_GLASS_PANE.get(), RenderType.cutout());
         });
 
     }

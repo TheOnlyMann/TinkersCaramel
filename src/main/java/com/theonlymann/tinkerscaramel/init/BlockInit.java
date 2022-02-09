@@ -3,6 +3,7 @@ package com.theonlymann.tinkerscaramel.init;
 import com.theonlymann.tinkerscaramel.TinkersCaramel;
 import com.theonlymann.tinkerscaramel.block.CaramelBlock;
 import com.theonlymann.tinkerscaramel.block.SugarGlassBlock;
+import com.theonlymann.tinkerscaramel.block.SugarGlassPaneBlock;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
@@ -44,11 +45,13 @@ public class BlockInit {
                     //.instabreak()
             ));
 
-    public static final RegistryObject<Block> SUGAR_GLASS_PANE = BLOCKS.register("sugar_glass_pane",
-            () -> new Block(AbstractBlock.Properties.of(Material.GLASS)
+    public static final RegistryObject<SugarGlassPaneBlock> SUGAR_GLASS_PANE = BLOCKS.register("sugar_glass_pane",
+            () -> new SugarGlassPaneBlock(AbstractBlock.Properties.of(Material.GLASS)
                     .strength(0.0f,0.0f)
                     .harvestLevel(-1)
                     .sound(SoundType.GLASS)
+                    .instabreak()
+                    .noOcclusion()
             ));
 
     //fluid blocks

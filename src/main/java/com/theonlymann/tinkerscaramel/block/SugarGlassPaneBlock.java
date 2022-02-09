@@ -5,32 +5,24 @@ import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.MobEntity;
-import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.pathfinding.PathNodeType;
 import net.minecraft.pathfinding.PathType;
 import net.minecraft.util.Direction;
-import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
-import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
+import slimeknights.tconstruct.shared.block.ClearGlassPaneBlock;
 
 import javax.annotation.Nullable;
 
-public class SugarGlassBlock extends Block {
-    public SugarGlassBlock(Properties properties){
+public class SugarGlassPaneBlock extends ClearGlassPaneBlock {
+    public SugarGlassPaneBlock(Properties properties){
         super(properties);
     }
 
-    private static final VoxelShape SHAPE = Block.box(1, 1, 1, 15, 15, 15);
-    @Deprecated
-    @Override
-    public VoxelShape getCollisionShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
-        return SHAPE;
-    }
 
     @Override
     public boolean isPathfindable(BlockState state, IBlockReader worldIn, BlockPos pos, PathType type) {
@@ -38,6 +30,7 @@ public class SugarGlassBlock extends Block {
     }
 
     //Thanks GizmoTheMoonPig
+    /*
     @Override
     public boolean propagatesSkylightDown(BlockState p_200123_1_, IBlockReader p_200123_2_, BlockPos p_200123_3_) {
         return true;
@@ -61,21 +54,26 @@ public class SugarGlassBlock extends Block {
     }
 
 
+     */
+
 
     @Override
     public void fallOn(World worldIn, BlockPos pos, Entity entityIn, float fallDistance) {
-        entityIn.causeFallDamage(fallDistance, 0.5F);
+        entityIn.causeFallDamage(fallDistance, 0.2F);
+        if (!worldIn.isClientSide() && !entityIn.isSuppressingBounce() && entityIn instanceof LivingEntity && fallDistance>1.2F){
+            worldIn.destroyBlock(pos,false);
+        }
     }
 
     @Override
     public void entityInside(BlockState state, World worldIn, BlockPos pos, Entity entityIn) {
-        if (!worldIn.isClientSide() && !entityIn.isSuppressingBounce() && entityIn instanceof LivingEntity) {
+        if (!worldIn.isClientSide()) {// && !entityIn.isCrouching() && entityIn.isColliding(pos,state)
             Vector3d entityPosition = entityIn.getPosition(1.0F);
             //Vector3d direction = entityPosition.subtract(pos.getX() + 0.5f, pos.getY(), pos.getZ() + 0.5f);
-            double velocity = entityPosition.subtract(entityIn.xo, entityIn.yo, entityIn.zo).length() * 0.95;
+            double velocity = entityPosition.subtract(entityIn.xo, entityPosition.y, entityIn.zo).length() * 0.95;//only seeing horizantal directional movements
             // determine whether we bounce in the X or the Z direction, we want whichever is bigger
             //Vector3d motion = entityIn.getDeltaMovement();
-            if (velocity >= 0.5) {
+            if (velocity >= 0.225) {
                 worldIn.destroyBlock(pos,false);
                 //entityIn.setDeltaMovement(new Vector3d(direction.x * 0.8, motion.y * 0.8, motion.z * 0.8));
             }
