@@ -45,9 +45,10 @@ public class SugarGlassBlock extends Block {
 
     @Override
     public float getShadeBrightness(BlockState p_220080_1_, IBlockReader p_220080_2_, BlockPos p_220080_3_) {
-        return 1.0f;
+        return 1.0F;
     }
 
+    @Deprecated
     @Override
     public boolean skipRendering(BlockState p_200122_1_, BlockState p_200122_2_, Direction p_200122_3_) {
         return p_200122_2_.is(this) ? true : super.skipRendering(p_200122_1_, p_200122_2_, p_200122_3_);
