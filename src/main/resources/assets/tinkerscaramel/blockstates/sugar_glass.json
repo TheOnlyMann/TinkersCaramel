@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "tinkerscaramel:block/sugar_glass"
+      "model": "minecraft:block/glass"
     }
   }
 }

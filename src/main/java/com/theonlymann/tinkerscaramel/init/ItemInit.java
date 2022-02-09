@@ -67,6 +67,8 @@ public class ItemInit {
     //block item
     public static final RegistryObject<BlockItem> SUGAR_GLASS = ITEMS.register("sugar_glass",
             () -> new BlockItem(BlockInit.SUGAR_GLASS.get(), new Item.Properties().tab(TinkersCaramel.TINKERS_CARAMEL_GROUP)));
+    public static final RegistryObject<BlockItem> SUGAR_CLEAR_GLASS = ITEMS.register("sugar_clear_glass",
+            () -> new BlockItem(BlockInit.SUGAR_CLEAR_GLASS.get(), new Item.Properties().tab(TinkersCaramel.TINKERS_CARAMEL_GROUP)));
     public static final RegistryObject<BlockItem> SUGAR_GLASS_PANE = ITEMS.register("sugar_glass_pane",
             () -> new BlockItem(BlockInit.SUGAR_GLASS_PANE.get(), new Item.Properties().tab(TinkersCaramel.TINKERS_CARAMEL_GROUP)));
 

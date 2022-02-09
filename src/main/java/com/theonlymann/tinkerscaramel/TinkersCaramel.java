@@ -13,6 +13,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.scoreboard.ScoreCriteria;
+import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -54,8 +55,10 @@ public class TinkersCaramel
     private void doClientStuff(final FMLClientSetupEvent event)
     {
         event.enqueueWork(() -> {
-            RenderTypeLookup.setRenderLayer(BlockInit.SUGAR_GLASS.get(), RenderType.translucent());
+            RenderTypeLookup.setRenderLayer(BlockInit.SUGAR_GLASS.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(BlockInit.SUGAR_CLEAR_GLASS.get(), RenderType.cutout());
         });
+
     }
 
     public static class TinkersCaramelGroup extends ItemGroup {
