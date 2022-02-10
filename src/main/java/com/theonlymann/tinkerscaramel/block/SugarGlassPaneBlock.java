@@ -61,20 +61,22 @@ public class SugarGlassPaneBlock extends ClearGlassPaneBlock {
     public void fallOn(World worldIn, BlockPos pos, Entity entityIn, float fallDistance) {
         entityIn.causeFallDamage(fallDistance, 0.2F);
         if (!worldIn.isClientSide() && !entityIn.isSuppressingBounce() && entityIn instanceof LivingEntity && fallDistance>1.2F){
-            worldIn.destroyBlock(pos,false);
+            worldIn.destroyBlock(pos,true);
         }
     }
 
     @Override
     public void entityInside(BlockState state, World worldIn, BlockPos pos, Entity entityIn) {
-        if (!worldIn.isClientSide()) {// && !entityIn.isCrouching() && entityIn.isColliding(pos,state)
+        if (true) {//!worldIn.isClientSide() && !entityIn.isCrouching() && entityIn.isColliding(pos,state)
             Vector3d entityPosition = entityIn.getPosition(1.0F);
             //Vector3d direction = entityPosition.subtract(pos.getX() + 0.5f, pos.getY(), pos.getZ() + 0.5f);
             double velocity = entityPosition.subtract(entityIn.xo, entityPosition.y, entityIn.zo).length() * 0.95;//only seeing horizantal directional movements
             // determine whether we bounce in the X or the Z direction, we want whichever is bigger
             //Vector3d motion = entityIn.getDeltaMovement();
-            if (velocity >= 0.225) {
-                worldIn.destroyBlock(pos,false);
+            double range = entityPosition.subtract(pos.getX()+0.5, entityPosition.y, pos.getZ()+0.5).length();
+            boolean foundrange = (-0.3<(entityPosition.x-pos.getX()-0.5)&&(entityPosition.x-pos.getX()-0.5)<0.3)&&(-0.3<(entityPosition.z-pos.getZ()-0.5)&&(entityPosition.z-pos.getZ()-0.5)<0.3);
+            if (range <0.61&& velocity >= 0.225) {
+                worldIn.destroyBlock(pos,true);
                 //entityIn.setDeltaMovement(new Vector3d(direction.x * 0.8, motion.y * 0.8, motion.z * 0.8));
             }
         }
