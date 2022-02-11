@@ -74,8 +74,8 @@ public class SugarGlassPaneBlock extends ClearGlassPaneBlock {
             // determine whether we bounce in the X or the Z direction, we want whichever is bigger
             //Vector3d motion = entityIn.getDeltaMovement();
             double range = entityPosition.subtract(pos.getX()+0.5, entityPosition.y, pos.getZ()+0.5).length();
-            boolean foundrange = (-0.3<(entityPosition.x-pos.getX()-0.5)&&(entityPosition.x-pos.getX()-0.5)<0.3)&&(-0.3<(entityPosition.z-pos.getZ()-0.5)&&(entityPosition.z-pos.getZ()-0.5)<0.3);
-            if (range <0.61&& velocity >= 0.225) {
+            boolean foundrange = (-0.5<=(entityPosition.x-pos.getX()-0.5)&&(entityPosition.x-pos.getX()-0.5)<=0.5)&&(-0.5<=(entityPosition.z-pos.getZ()-0.5)&&(entityPosition.z-pos.getZ()-0.5)<=0.5);
+            if (foundrange && velocity >= 0.225) {//range <= 0.61
                 worldIn.destroyBlock(pos,true);
                 //entityIn.setDeltaMovement(new Vector3d(direction.x * 0.8, motion.y * 0.8, motion.z * 0.8));
             }

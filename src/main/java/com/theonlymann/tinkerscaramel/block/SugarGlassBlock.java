@@ -25,7 +25,7 @@ public class SugarGlassBlock extends Block {
         super(properties);
     }
 
-    private static final VoxelShape SHAPE = Block.box(1, 1, 1, 15, 15, 15);
+    private static final VoxelShape SHAPE = Block.box(2, 2, 2, 14, 14, 14);
     @Deprecated
     @Override
     public VoxelShape getCollisionShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
@@ -75,7 +75,7 @@ public class SugarGlassBlock extends Block {
             double velocity = entityPosition.subtract(entityIn.xo, entityIn.yo, entityIn.zo).length() * 0.95;
             // determine whether we bounce in the X or the Z direction, we want whichever is bigger
             //Vector3d motion = entityIn.getDeltaMovement();
-            if (velocity >= 0.5) {
+            if (velocity >= 0.4) {
                 worldIn.destroyBlock(pos,false);
                 //entityIn.setDeltaMovement(new Vector3d(direction.x * 0.8, motion.y * 0.8, motion.z * 0.8));
             }
