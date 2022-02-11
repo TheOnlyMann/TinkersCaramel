@@ -46,7 +46,7 @@ public class BlockInit {
             ));
 
     public static final RegistryObject<SugarGlassPaneBlock> SUGAR_GLASS_PANE = BLOCKS.register("sugar_glass_pane",
-            () -> new SugarGlassPaneBlock(AbstractBlock.Properties.of(Material.GLASS)
+            () -> new SugarGlassPaneBlock(AbstractBlock.Properties.of(Material.BAMBOO_SAPLING)
                     .strength(0.0f,0.0f)
                     .harvestLevel(-1)
                     .sound(SoundType.GLASS)

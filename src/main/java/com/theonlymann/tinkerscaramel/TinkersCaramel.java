@@ -8,6 +8,7 @@ import com.theonlymann.tinkerscaramel.init.FluidInit;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.data.DataGenerator;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -15,12 +16,14 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.scoreboard.ScoreCriteria;
 import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -73,6 +76,14 @@ public class TinkersCaramel
         }
     }
 
+    @SubscribeEvent
+    public static void gatherData(final GatherDataEvent event) {
+        DataGenerator gen = event.getGenerator();
+
+        // some generators need this
+        ExistingFileHelper fileHelper = event.getExistingFileHelper();
+        //gen.addProvider(new YourClass(gen));
+    }
 
     /*@SubscribeEvent
     public static void onRegisterItems(final RegistryEvent.Register<Item> event){
