@@ -1,34 +1,25 @@
 package com.theonlymann.tinkerscaramel;
 
 
-import com.sun.jna.WString;
+import com.theonlymann.tinkerscaramel.datagen.TinkersCaramelFluidTags;
 import com.theonlymann.tinkerscaramel.init.BlockInit;
 import com.theonlymann.tinkerscaramel.init.ItemInit;
 import com.theonlymann.tinkerscaramel.init.FluidInit;
-import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.scoreboard.ScoreCriteria;
-import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("tinkerscaramel")
@@ -82,9 +73,8 @@ public class TinkersCaramel
 
         // some generators need this
         ExistingFileHelper fileHelper = event.getExistingFileHelper();
-        //gen.addProvider(new YourClass(gen));
+        gen.addProvider(new TinkersCaramelFluidTags(gen,fileHelper));
     }
-
     /*@SubscribeEvent
     public static void onRegisterItems(final RegistryEvent.Register<Item> event){
         BlockInit.BLOCKS.getEntries().stream().map(RegistryObject::get).forEach(block ->{

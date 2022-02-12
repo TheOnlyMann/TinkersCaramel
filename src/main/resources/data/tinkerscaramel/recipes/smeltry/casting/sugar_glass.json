@@ -5,9 +5,9 @@
   },
   "cast_consumed": true,
   "fluid": {
-    "fluidTag": "tinkerscaramel:molten_sugar",
+    "tag": "tinkerscaramel:molten_sugar",
     "amount": 800
   },
-  "result": "tinkerscaramel:sugar_clear_glass",
+  "result": "tinkerscaramel:sugar_glass",
   "cooling_time": 90
 }

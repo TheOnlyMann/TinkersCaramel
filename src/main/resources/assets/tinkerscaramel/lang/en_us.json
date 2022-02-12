@@ -17,11 +17,26 @@
   "item.tinkerscaramel.infused_caramel_enderslime": "Enderslime Infused Caramel",
   "item.tinkerscaramel.infused_caramel_magma_cream": "Magma Cream Infused Caramel",
 
+  "item.tinkerscaramel.molten_sugar_bucket": "Molten Sugar Bucket",
+  "item.tinkerscaramel.molten_caramel_bucket": "Caramel Bucket",
+  "item.tinkerscaramel.molten_caramel_blood_bucket": "Blood Infused Caramel Bucket",
+  "item.tinkerscaramel.molten_caramel_earthslime_bucket": "Earthslime Infused Caramel Bucket",
+  "item.tinkerscaramel.molten_caramel_enderslime_bucket": "Enderslime Infused Caramel Bucket",
+  "item.tinkerscaramel.molten_caramel_magma_cream_bucket": "Magma Cream Infused Caramel Bucket",
+  "item.tinkerscaramel.molten_caramel_skyslime_bucket": "Skyslime Infused Caramel Bucket",
+
   "comment2": "blocks",
   "block.tinkerscaramel.caramel_block": "Block of Caramel",
   "block.tinkerscaramel.sugar_glass": "Sugar Glass",
   "block.tinkerscaramel.sugar_clear_glass": "Sugar Clear Glass",
   "block.tinkerscaramel.sugar_glass_pane": "Sugar Glass Pane",
 
-  "comment3": "to"
+  "comment3": "fluids",
+  "fluid.tinkerscaramel.molten_sugar": "Sugar Syrup",
+  "fluid.tinkerscaramel.molten_caramel": "Molten Caramel",
+  "fluid.tinkerscaramel.molten_caramel_blood": "Molten Blood Caramel",
+  "fluid.tinkerscaramel.molten_caramel_earthslime": "Molten Earthslime Caramel",
+  "fluid.tinkerscaramel.molten_caramel_enderslime": "Molten Enderslime Caramel",
+  "fluid.tinkerscaramel.molten_caramel_magma_cream": "Molten Magma Cream Caramel",
+  "fluid.tinkerscaramel.molten_caramel_skyslime": "Molten Skyslime Caramel"
 }
