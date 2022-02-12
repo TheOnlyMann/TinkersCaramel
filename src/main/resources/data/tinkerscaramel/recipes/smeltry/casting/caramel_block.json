@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_basin",
   "fluid": {
-    "fluidTag": "tinkerscaramel:molten_caramel",
+    "tag": "tinkerscaramel:molten_caramel",
     "amount": 1000
   },
   "result": "tinkerscaramel:caramel_block",
