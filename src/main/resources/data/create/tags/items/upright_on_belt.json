@@ -1,0 +1,12 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "replace": false,
+  "values": [
+    "tinkerscaramel:caramel_apple"
+  ]
+}
