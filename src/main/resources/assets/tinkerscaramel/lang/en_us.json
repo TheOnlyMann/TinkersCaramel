@@ -3,6 +3,9 @@
   "itemGroup.tinkerscarameltab": "Tinkers Caramel",
   "material.tinkerscaramel.glazed_pig_iron": "Glazed Pig Iron",
   "material.tinkerscaramel.glazed_pig_iron.flavor": "How thick was the glaze though?",
+  "modifier.tinkerscaramel.glazed": "Glazed",
+  "modifier.tinkerscaramel.glazed.flavor": "EXTRA THICC",
+  "modifier.tinkerscaramel.glazed.description": "The thick glaze on the material seems to heal the wound of the tool using overslime over time.",
 
   "comment1": "items",
   "item.tinkerscaramel.sugar_shard": "Sugar Shard",

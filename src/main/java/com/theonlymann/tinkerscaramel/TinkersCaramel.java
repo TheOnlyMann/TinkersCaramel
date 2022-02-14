@@ -5,6 +5,7 @@ import com.theonlymann.tinkerscaramel.datagen.TinkersCaramelFluidTags;
 import com.theonlymann.tinkerscaramel.init.BlockInit;
 import com.theonlymann.tinkerscaramel.init.ItemInit;
 import com.theonlymann.tinkerscaramel.init.FluidInit;
+import com.theonlymann.tinkerscaramel.init.ModifierInit;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.data.DataGenerator;
@@ -23,7 +24,7 @@ import org.apache.logging.log4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("tinkerscaramel")
-//@Mod.EventBusSubscriber(modid = TinkersCaramel.MOD_ID, bus= Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = TinkersCaramel.MOD_ID, bus= Mod.EventBusSubscriber.Bus.MOD)
 public class TinkersCaramel
 {
     // Directly reference a log4j logger.
@@ -38,6 +39,7 @@ public class TinkersCaramel
         ItemInit.ITEMS.register(bus);
         BlockInit.BLOCKS.register(bus);
         FluidInit.FLUIDS.register(bus);
+        ModifierInit.MODIFIERS.register(bus);
 
         MinecraftForge.EVENT_BUS.register(this);
 
@@ -70,10 +72,17 @@ public class TinkersCaramel
     @SubscribeEvent
     public static void gatherData(final GatherDataEvent event) {
         DataGenerator gen = event.getGenerator();
+        ExistingFileHelper fileHelper = event.getExistingFileHelper();
 
         // some generators need this
-        ExistingFileHelper fileHelper = event.getExistingFileHelper();
-        gen.addProvider(new TinkersCaramelFluidTags(gen,fileHelper));
+
+        if (event.includeServer()) {
+            // put tags, materials, traits, recipes in here.
+            gen.addProvider(new TinkersCaramelFluidTags(gen,fileHelper));
+        }
+        if (event.includeClient()) {
+            // put language, itemModels, blockstates, material texture generator in here.
+        }
     }
     /*@SubscribeEvent
     public static void onRegisterItems(final RegistryEvent.Register<Item> event){

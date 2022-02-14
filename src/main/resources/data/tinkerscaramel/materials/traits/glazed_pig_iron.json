@@ -3,6 +3,10 @@
     {
       "name": "tconstruct:tasty",
       "level": 1
+    },
+    {
+      "name": "tinkerscaramel:glazed",
+      "level": 1
     }
   ]
 }
