@@ -3,7 +3,7 @@
   "input": "tconstruct:pig_iron",
   "fluid": {
     "tag": "tinkerscaramel:molten_sugar",
-    "amount": 1000
+    "amount": 1600
   },
   "temperature": 340,
   "output": "tinkerscaramel:glazed_pig_iron"

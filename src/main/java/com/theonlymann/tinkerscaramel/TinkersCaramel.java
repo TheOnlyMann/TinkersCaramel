@@ -2,6 +2,9 @@ package com.theonlymann.tinkerscaramel;
 
 
 import com.theonlymann.tinkerscaramel.datagen.TinkersCaramelFluidTags;
+import com.theonlymann.tinkerscaramel.datagen.TinkersCaramelMaterials;
+import com.theonlymann.tinkerscaramel.datagen.TinkersCaramelMaterialSpriteProvider;
+import com.theonlymann.tinkerscaramel.datagen.TinkersCaramelRenderInfo;
 import com.theonlymann.tinkerscaramel.init.BlockInit;
 import com.theonlymann.tinkerscaramel.init.ItemInit;
 import com.theonlymann.tinkerscaramel.init.FluidInit;
@@ -21,6 +24,10 @@ import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import slimeknights.tconstruct.library.client.data.material.AbstractMaterialSpriteProvider;
+import slimeknights.tconstruct.library.client.data.material.MaterialPartTextureGenerator;
+import slimeknights.tconstruct.library.data.material.AbstractMaterialDataProvider;
+import slimeknights.tconstruct.tools.data.sprite.TinkerPartSpriteProvider;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("tinkerscaramel")
@@ -45,7 +52,6 @@ public class TinkersCaramel
 
         bus.addListener(this::doClientStuff);
         //RenderTypeLookup.setRenderLayer(BlockInit.SUGAR_GLASS.get(), RenderType.cutout());
-
     }
 
     private void doClientStuff(final FMLClientSetupEvent event)
@@ -79,9 +85,14 @@ public class TinkersCaramel
         if (event.includeServer()) {
             // put tags, materials, traits, recipes in here.
             gen.addProvider(new TinkersCaramelFluidTags(gen,fileHelper));
+            AbstractMaterialDataProvider materials = new TinkersCaramelMaterials(gen);
+            gen.addProvider(materials);
         }
         if (event.includeClient()) {
             // put language, itemModels, blockstates, material texture generator in here.
+            AbstractMaterialSpriteProvider provider = new TinkersCaramelMaterialSpriteProvider();
+            gen.addProvider(new MaterialPartTextureGenerator(gen,fileHelper,new TinkerPartSpriteProvider(), provider));
+            gen.addProvider(new TinkersCaramelRenderInfo(gen,provider));
         }
     }
     /*@SubscribeEvent

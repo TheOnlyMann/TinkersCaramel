@@ -4,11 +4,11 @@
   "inputs": [
     {
       "tag": "tinkerscaramel:molten_sugar",
-      "amount": 4
+      "amount": 5
     },
     {
       "tag": "forge:milk",
-      "amount": 1
+      "amount": 5
     }
   ],
   "result": {

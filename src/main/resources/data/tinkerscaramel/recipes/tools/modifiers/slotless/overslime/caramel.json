@@ -1,0 +1,8 @@
+
+{
+  "type": "tconstruct:overslime_modifier",
+  "ingredient": {
+    "item": "tinkerscaramel:caramel_crystal"
+  },
+  "restore_amount": 5
+}

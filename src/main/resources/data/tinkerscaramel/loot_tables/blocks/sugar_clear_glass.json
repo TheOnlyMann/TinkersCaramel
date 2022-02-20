@@ -27,6 +27,21 @@
               "functions": [
                 {
                   "function": "minecraft:set_count",
+                  "count": 1
+                }
+              ],
+              "name": "tinkerscaramel:sugar_clear_glass"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:survives_explosion"
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
                   "count": 4
                 }
               ],

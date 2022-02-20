@@ -36,6 +36,8 @@ authors="TheOnlyMann and all the homies that helped" #optional
 description='''
 Why are you trying to read this?
 Whatever, do as you please
+Credits
+waluigi jeggings for: texturework of caramel apple, caramel crystal
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.tinkerscaramel]] #optional

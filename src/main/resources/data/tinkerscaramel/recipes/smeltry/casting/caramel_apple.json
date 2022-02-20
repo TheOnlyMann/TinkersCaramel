@@ -6,7 +6,7 @@
   "cast_consumed": true,
   "fluid": {
     "tag": "tinkerscaramel:molten_caramel",
-    "amount": 800
+    "amount": 4000
   },
   "result": "tinkerscaramel:caramel_apple",
   "cooling_time": 135

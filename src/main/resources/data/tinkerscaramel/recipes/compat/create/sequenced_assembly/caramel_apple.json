@@ -1,0 +1,41 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:apple"
+  },
+  "transitionalItem": {
+    "item": "minecraft:apple"
+  },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "minecraft:apple"
+        },
+        {
+          "fluid": "tinkerscaramel:molten_caramel",
+          "amount": 800
+        }
+      ],
+      "results": [
+        {
+          "item": "tinkerscaramel:caramel_apple"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "tinkerscaramel:caramel_apple",
+      "count": 1
+    }
+  ],
+  "loops": 4
+}

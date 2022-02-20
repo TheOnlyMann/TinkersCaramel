@@ -31,6 +31,12 @@ public class SugarGlassBlock extends Block {
     public VoxelShape getCollisionShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
         return SHAPE;
     }
+    //Thanks desht
+    @Deprecated
+    @Override
+    public VoxelShape getBlockSupportShape(BlockState state, IBlockReader worldIn, BlockPos pos) {
+        return VoxelShapes.block();
+    }
 
     @Override
     public boolean isPathfindable(BlockState state, IBlockReader worldIn, BlockPos pos, PathType type) {
