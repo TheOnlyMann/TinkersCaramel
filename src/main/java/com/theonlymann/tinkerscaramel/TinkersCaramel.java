@@ -87,6 +87,8 @@ public class TinkersCaramel
             gen.addProvider(new TinkersCaramelFluidTags(gen,fileHelper));
             AbstractMaterialDataProvider materials = new TinkersCaramelMaterials(gen);
             gen.addProvider(materials);
+            gen.addProvider(new TinkersCaramelMaterials.TinkersCaramelTraits(gen, materials));
+            gen.addProvider(new TinkersCaramelMaterials.TinkersCaramelMaterialStats(gen, materials));
         }
         if (event.includeClient()) {
             // put language, itemModels, blockstates, material texture generator in here.

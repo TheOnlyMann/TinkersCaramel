@@ -37,7 +37,12 @@ description='''
 Why are you trying to read this?
 Whatever, do as you please
 Credits
-waluigi jeggings for: texturework of caramel apple, caramel crystal
+waluigi jeggings for: texturework of Caramel Apple, Caramel Crystal
+Blue Crab for: texturework of Glazed Pig Iron and respective toolparts, Sugar Shard
+KnightMiner, Mrthomas20121 for: making my dumb brain understand datagen and tinkers codestuff
+GizmoTheMoonPig for: helping me with making of glass stuff codewise
+desht for: giving insight for making redstone able to be placed on non-full blocks
+mDiyo for: actually encouraging me to make this as my first ever mod for minecraft
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.tinkerscaramel]] #optional
