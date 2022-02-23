@@ -1,8 +1,8 @@
 {
   "loader": "mantle:fluid_texture",
   "textures": {
-    "still": "tconstruct:block/fluid/molten/still",
-    "flowing": "tconstruct:block/fluid/molten/flowing"
+    "still": "tinkerscaramel:blocks/fluid/still",
+    "flowing": "tinkerscaramel:blocks/fluid/flowing"
   },
   "color": "afce00"
 }

@@ -23,9 +23,16 @@ public class ItemInit {
     public static final RegistryObject<Item> CARAMEL_APPLE = ITEMS.register("caramel_apple",
             () -> new Item(new Item.Properties().tab(TinkersCaramel.TINKERS_CARAMEL_GROUP)
                     .food(new Food.Builder().nutrition(2).saturationMod(0.2F)
-                        .effect(() -> new EffectInstance(Effects.SATURATION, 10, 0), 1.0F)
-                        .effect(() -> new EffectInstance(Effects.HUNGER, 20 * 20, 0), 1.0F).build())
-                    .stacksTo(16)));
+                            .effect(() -> new EffectInstance(Effects.SATURATION, 10, 0), 1.0F)
+                            .effect(() -> new EffectInstance(Effects.HUNGER, 20 * 20, 0), 1.0F).build())
+                    .stacksTo(1)));
+    public static final RegistryObject<Item> GLAZED_BERRIES = ITEMS.register("glazed_berries",
+            () -> new Item(new Item.Properties().tab(TinkersCaramel.TINKERS_CARAMEL_GROUP)
+                    .food(new Food.Builder().nutrition(2).saturationMod(0.2F)
+                            .effect(() -> new EffectInstance(Effects.HEAL, 1, 0), 1.0F)
+                            .effect(() -> new EffectInstance(Effects.CONFUSION, 100, 0), 1.0F)
+                            .build())
+                    .stacksTo(4)));
 
     //foods-infused caramels
     public static final RegistryObject<Item> INFUSED_CARAMEL_EARTHSLIME = ITEMS.register("infused_caramel_earthslime",

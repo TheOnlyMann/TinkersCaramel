@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": "minecraft:sweet_berries"
+  },
+  "cast_consumed": true,
+  "fluid": {
+    "tag": "tinkerscaramel:molten_sugar",
+    "amount": 4000
+  },
+  "result": "tinkerscaramel:glazed_berries",
+  "cooling_time": 270
+}

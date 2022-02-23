@@ -4,7 +4,7 @@
   "inputs": [
     {
       "tag": "tinkerscaramel:molten_sugar",
-      "amount": 5
+      "amount": 10
     },
     {
       "tag": "forge:milk",
