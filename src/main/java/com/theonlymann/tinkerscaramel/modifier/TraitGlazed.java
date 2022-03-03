@@ -19,7 +19,7 @@ public class TraitGlazed extends Modifier {
     @Override
     public void onInventoryTick(IModifierToolStack tool, int level, World world, LivingEntity holder, int itemSlot, boolean isSelected, boolean isCorrectSlot, ItemStack stack) {
 
-        if (!world.isClientSide && holder.tickCount % (60 / level) == 0 && tool.getDamage() > 0 && holder.getUseItem() != stack){
+        if (!world.isClientSide && holder.tickCount % (420 / level) == 0 && tool.getDamage() > 0 && holder.getUseItem() != stack){
             OverslimeModifier overslime = TinkerModifiers.overslime.get();
             int current = overslime.getOverslime(tool);
             //int cap = overslime.getCapacity(tool);

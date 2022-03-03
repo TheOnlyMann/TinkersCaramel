@@ -1,6 +1,3 @@
 {
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "tinkerscaramel:blocks/infused_caramel_blood"
-  }
+  "parent": "tinkerscaramel:block/infused_caramel_blood"
 }

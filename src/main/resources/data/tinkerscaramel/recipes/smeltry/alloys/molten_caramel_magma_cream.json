@@ -4,7 +4,7 @@
   "inputs": [
     {
       "tag": "tinkerscaramel:molten_caramel",
-      "amount": 5
+      "amount": 4
     },
     {
       "tag": "tconstruct:magma",
@@ -13,7 +13,7 @@
   ],
   "result": {
     "fluid": "tinkerscaramel:molten_caramel_magma_cream",
-    "amount": 5
+    "amount": 4
   },
   "temperature": 270
 }

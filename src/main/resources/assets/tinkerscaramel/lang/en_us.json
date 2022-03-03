@@ -14,13 +14,6 @@
   "item.tinkerscaramel.caramel_apple": "Caramel Apple",
   "item.tinkerscaramel.glazed_berries": "Glazed Berries",
 
-  "item.tinkerscaramel.infused_caramel_earthslime": "Slime Infused Caramel",
-  "item.tinkerscaramel.infused_caramel_skyslime": "Skyslime Infused Caramel",
-  "item.tinkerscaramel.infused_caramel_blood": "Blood Infused Caramel",
-  "item.tinkerscaramel.infused_caramel_ichor": "Ichor Infused Caramel",
-  "item.tinkerscaramel.infused_caramel_enderslime": "Enderslime Infused Caramel",
-  "item.tinkerscaramel.infused_caramel_magma_cream": "Magma Cream Infused Caramel",
-
   "item.tinkerscaramel.molten_sugar_bucket": "Molten Sugar Bucket",
   "item.tinkerscaramel.molten_caramel_bucket": "Caramel Bucket",
   "item.tinkerscaramel.molten_caramel_blood_bucket": "Blood Infused Caramel Bucket",
@@ -34,6 +27,13 @@
   "block.tinkerscaramel.sugar_glass": "Sugar Glass",
   "block.tinkerscaramel.sugar_clear_glass": "Sugar Clear Glass",
   "block.tinkerscaramel.sugar_glass_pane": "Sugar Glass Pane",
+
+  "block.tinkerscaramel.infused_caramel_earthslime": "Slime Infused Caramel",
+  "block.tinkerscaramel.infused_caramel_skyslime": "Skyslime Infused Caramel",
+  "block.tinkerscaramel.infused_caramel_blood": "Blood Infused Caramel",
+  "block.tinkerscaramel.infused_caramel_ichor": "Ichor Infused Caramel",
+  "block.tinkerscaramel.infused_caramel_enderslime": "Enderslime Infused Caramel",
+  "block.tinkerscaramel.infused_caramel_magma_cream": "Magma Cream Infused Caramel",
 
   "comment3": "fluids",
   "fluid.tinkerscaramel.molten_sugar": "Sugar Syrup",

@@ -1,8 +1,8 @@
 {
   "loader": "mantle:fluid_texture",
   "textures": {
-    "still": "tinkerscaramel:blocks/fluid/still",
-    "flowing": "tinkerscaramel:blocks/fluid/flowing"
+    "still": "tinkerscaramel:blocks/fluid/sugar_still",
+    "flowing": "tinkerscaramel:blocks/fluid/sugar_flowing"
   },
   "color": "FFFFFF"
 }

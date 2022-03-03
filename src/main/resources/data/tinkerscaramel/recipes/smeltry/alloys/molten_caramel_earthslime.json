@@ -4,7 +4,7 @@
   "inputs": [
     {
       "tag": "tinkerscaramel:molten_caramel",
-      "amount": 5
+      "amount": 4
     },
     {
       "tag": "forge:slime",
@@ -13,7 +13,7 @@
   ],
   "result": {
     "fluid": "tinkerscaramel:molten_caramel_earthslime",
-    "amount": 5
+    "amount": 4
   },
   "temperature": 270
 }

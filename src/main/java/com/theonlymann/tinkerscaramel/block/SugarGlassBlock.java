@@ -81,7 +81,8 @@ public class SugarGlassBlock extends Block {
             double velocity = entityPosition.subtract(entityIn.xo, entityIn.yo, entityIn.zo).length() * 0.95;
             // determine whether we bounce in the X or the Z direction, we want whichever is bigger
             //Vector3d motion = entityIn.getDeltaMovement();
-            if (velocity >= 0.4) {
+            //double velocity = entityIn.getDeltaMovement().length();
+            if (velocity >= 0.5) {
                 worldIn.destroyBlock(pos,false);
                 //entityIn.setDeltaMovement(new Vector3d(direction.x * 0.8, motion.y * 0.8, motion.z * 0.8));
             }
