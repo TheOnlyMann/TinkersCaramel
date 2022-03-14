@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "tinkerscaramel:bacon"
+  },
+  "cast_consumed": true,
+  "fluid": {
+    "tag": "tinkerscaramel:molten_sugar",
+    "amount": 1600
+  },
+  "result": "tinkerscaramel:candied_bacon",
+  "cooling_time": 63
+}

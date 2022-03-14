@@ -1,6 +1,8 @@
 {
-  "parent": "block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "all": "tinkerscaramel:blocks/infused_caramel_enderslime"
+    "top": "tinkerscaramel:blocks/caramel_block/ender/top",
+    "bottom": "tinkerscaramel:blocks/caramel_block/ender/bottom",
+    "side": "tinkerscaramel:blocks/caramel_block/ender/side"
   }
 }

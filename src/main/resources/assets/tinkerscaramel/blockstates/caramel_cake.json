@@ -1,25 +1,31 @@
 {
   "variants": {
     "bites=0": {
-      "model": "minecraft:block/cake"
+      "model": "tinkerscaramel:block/caramel_cake/innamon_8"
     },
     "bites=1": {
-      "model": "minecraft:block/cake_slice1"
+      "model": "tinkerscaramel:block/caramel_cake/innamon_7"
     },
     "bites=2": {
-      "model": "minecraft:block/cake_slice2"
+      "model": "tinkerscaramel:block/caramel_cake/innamon_6"
     },
     "bites=3": {
-      "model": "minecraft:block/cake_slice3"
+      "model": "tinkerscaramel:block/caramel_cake/innamon_5"
     },
     "bites=4": {
-      "model": "minecraft:block/cake_slice4"
+      "model": "tinkerscaramel:block/caramel_cake/innamon_4"
     },
     "bites=5": {
-      "model": "minecraft:block/cake_slice5"
+      "model": "tinkerscaramel:block/caramel_cake/innamon_3"
     },
     "bites=6": {
-      "model": "minecraft:block/cake_slice6"
+      "model": "tinkerscaramel:block/caramel_cake/innamon_2"
+    },
+    "bites=7": {
+      "model": "tinkerscaramel:block/caramel_cake/innamon_1"
+    },
+    "bites=8": {
+      "model": "tinkerscaramel:block/caramel_cake/innamon_0"
     }
   }
 }

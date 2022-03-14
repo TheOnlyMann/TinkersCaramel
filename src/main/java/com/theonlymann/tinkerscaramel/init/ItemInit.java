@@ -1,6 +1,7 @@
 package com.theonlymann.tinkerscaramel.init;
 
 import com.theonlymann.tinkerscaramel.TinkersCaramel;
+import com.theonlymann.tinkerscaramel.item.BreadPileBlockItem;
 import com.theonlymann.tinkerscaramel.item.CaramelBlockItem;
 import net.minecraft.item.*;
 import net.minecraft.potion.EffectInstance;
@@ -33,6 +34,13 @@ public class ItemInit {
                             .effect(() -> new EffectInstance(Effects.CONFUSION, 100, 0), 1.0F)
                             .build())
                     .stacksTo(4)));
+
+    public static final RegistryObject<Item> CARROT_BACON = ITEMS.register("carrot_bacon",
+            () -> new Item(new Item.Properties().tab(TinkersCaramel.TINKERS_CARAMEL_GROUP)
+                    .food(new Food.Builder().nutrition(4).saturationMod(0.6F).build())));
+    public static final RegistryObject<Item> CANDIED_BACON = ITEMS.register("candied_bacon",
+            () -> new Item(new Item.Properties().tab(TinkersCaramel.TINKERS_CARAMEL_GROUP)
+                    .food(new Food.Builder().nutrition(8).saturationMod(0.6F).build())));
 
     //foods-infused caramels
     public static final RegistryObject<CaramelBlockItem> INFUSED_CARAMEL_EARTHSLIME = ITEMS.register("infused_caramel_earthslime",
@@ -78,7 +86,12 @@ public class ItemInit {
             () -> new BlockItem(BlockInit.SUGAR_GLASS_PANE.get(), new Item.Properties().tab(TinkersCaramel.TINKERS_CARAMEL_GROUP)));
 
     public static final RegistryObject<BlockItem> CARAMEL_CAKE = ITEMS.register("caramel_cake",
-            () -> new BlockItem(BlockInit.CARAMEL_CAKE.get(), new Item.Properties().tab(TinkersCaramel.TINKERS_CARAMEL_GROUP)));
+            () -> new BlockItem(BlockInit.CARAMEL_CAKE.get(), new Item.Properties().tab(TinkersCaramel.TINKERS_CARAMEL_GROUP).stacksTo(1)));
+
+    public static final RegistryObject<BreadPileBlockItem> BREAD_NINE = ITEMS.register("bread_nine",
+            () -> new BreadPileBlockItem(BlockInit.BREAD_NINE.get(), new Item.Properties().tab(TinkersCaramel.TINKERS_CARAMEL_GROUP)
+                    .food(new Food.Builder().alwaysEat().nutrition(40).saturationMod(0.5F).build())
+                    ));
 
     //possibly caramel block types?
 

@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_basin",
+  "cast": {
+    "item": "tinkerscaramel:bread_nine"
+  },
+  "cast_consumed": true,
+  "fluid": {
+    "tag": "tinkerscaramel:molten_caramel",
+    "amount": 12000
+  },
+  "result": "tinkerscaramel:caramel_cake",
+  "cooling_time": 435
+}

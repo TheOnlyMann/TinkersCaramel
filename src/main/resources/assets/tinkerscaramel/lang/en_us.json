@@ -6,6 +6,8 @@
   "modifier.tinkerscaramel.glazed": "Glazed",
   "modifier.tinkerscaramel.glazed.flavor": "EXTRA THICC",
   "modifier.tinkerscaramel.glazed.description": "The thick glaze on the material seems to heal the wound of the tool using overslime over time.",
+  "death.attack.tinkerscaramel.bread_death": "%1$s tried to eat 9 bread at once and suffered the consequence",
+  "death.attack.tinkerscaramel.bread_death.player": "%1$s ate 9 bread at once and had a heart attack while running away from %2$s",
 
   "comment1": "items",
   "item.tinkerscaramel.sugar_shard": "Sugar Shard",
@@ -13,6 +15,8 @@
 
   "item.tinkerscaramel.caramel_apple": "Caramel Apple",
   "item.tinkerscaramel.glazed_berries": "Glazed Berries",
+  "item.tinkerscaramel.carrot_bacon": "Carrot Bacon",
+  "item.tinkerscaramel.candied_bacon": "Candied Bacon",
 
   "item.tinkerscaramel.molten_sugar_bucket": "Molten Sugar Bucket",
   "item.tinkerscaramel.molten_caramel_bucket": "Caramel Bucket",
@@ -34,6 +38,9 @@
   "block.tinkerscaramel.infused_caramel_ichor": "Ichor Infused Caramel",
   "block.tinkerscaramel.infused_caramel_enderslime": "Enderslime Infused Caramel",
   "block.tinkerscaramel.infused_caramel_magma_cream": "Magma Cream Infused Caramel",
+
+  "block.tinkerscaramel.bread_nine": "Stack of Bread",
+  "block.tinkerscaramel.caramel_cake": "Cinnamon Rolls",
 
   "comment3": "fluids",
   "fluid.tinkerscaramel.molten_sugar": "Sugar Syrup",

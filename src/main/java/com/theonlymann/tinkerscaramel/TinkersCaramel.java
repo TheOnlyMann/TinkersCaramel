@@ -61,6 +61,8 @@ public class TinkersCaramel
             RenderTypeLookup.setRenderLayer(BlockInit.SUGAR_CLEAR_GLASS.get(), RenderType.cutout());
             RenderTypeLookup.setRenderLayer(BlockInit.SUGAR_GLASS_PANE.get(), RenderType.cutout());
             RenderTypeLookup.setRenderLayer(BlockInit.INFUSED_CARAMEL_BLOOD.get(), RenderType.translucent());
+            RenderTypeLookup.setRenderLayer(BlockInit.BREAD_NINE.get(), RenderType.translucent());
+            RenderTypeLookup.setRenderLayer(BlockInit.CARAMEL_CAKE.get(), RenderType.translucent());
 
             RenderTypeLookup.setRenderLayer(FluidInit.MOLTEN_SUGAR.getStill(), RenderType.translucent());
             RenderTypeLookup.setRenderLayer(FluidInit.MOLTEN_SUGAR.getFlowing(), RenderType.translucent());

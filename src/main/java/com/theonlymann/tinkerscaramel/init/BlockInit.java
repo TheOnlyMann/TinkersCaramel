@@ -1,10 +1,7 @@
 package com.theonlymann.tinkerscaramel.init;
 
 import com.theonlymann.tinkerscaramel.TinkersCaramel;
-import com.theonlymann.tinkerscaramel.block.CaramelBlock;
-import com.theonlymann.tinkerscaramel.block.CaramelCakeBlock;
-import com.theonlymann.tinkerscaramel.block.SugarGlassBlock;
-import com.theonlymann.tinkerscaramel.block.SugarGlassPaneBlock;
+import com.theonlymann.tinkerscaramel.block.*;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
@@ -105,4 +102,10 @@ public class BlockInit {
             () -> new CaramelCakeBlock(AbstractBlock.Properties.of(Material.CAKE)
                     .strength(0.5F).sound(SoundType.WOOL)));
 
+
+    public static final RegistryObject<BreadPileBlock> BREAD_NINE = BLOCKS.register("bread_nine",
+            () -> new BreadPileBlock(AbstractBlock.Properties.of(Material.SNOW)
+                    .strength(0.3f,0.5f)
+                    .harvestLevel(-1).noOcclusion()
+            ));
 }
