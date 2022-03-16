@@ -1,5 +1,6 @@
 package com.theonlymann.tinkerscaramel.modifier;
 
+import com.theonlymann.tinkerscaramel.init.ItemInit;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -9,7 +10,11 @@ import net.minecraft.item.Items;
 import net.minecraft.loot.LootContext;
 import net.minecraft.loot.LootParameter;
 import net.minecraft.loot.LootParameters;
+import net.minecraft.loot.LootTable;
+import net.minecraft.util.IItemProvider;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
+import net.minecraftforge.common.extensions.IForgeBlockState;
 import slimeknights.tconstruct.common.TinkerTags;
 import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.tools.helper.ToolDamageUtil;
@@ -45,11 +50,23 @@ public class TraitGlazed extends Modifier {
         // if no damage source, probably not a mob
         // otherwise blocks breaking (where THIS_ENTITY is the player) start dropping bacon
         // we want the opposite
-        if (context.hasParam(LootParameters.DAMAGE_SOURCE)) {
+        /*
+        if (context.hasParam(LootParameters.BLOCK_ENTITY)) {
             return generatedLoot;
         }
+        * /
+        ;
+        if(generatedLoot.stream().anyMatch(stack->Items.CARROT.getDefaultInstance().sameItem(stack)))
+        {
+            ItemStack carrot = generatedLoot.get(generatedLoot.indexOf(Items.CARROT.asItem()));
+            //ItemStack carrotbacon = new ItemStack();
+            //carrotbacon.setCount(carrot.getCount());
+            generatedLoot.remove(Items.CARROT.asItem());
+            generatedLoot.add(new ItemStack(TinkerCommons.bacon));
+        }
+        /*
         context.hasParam(LootParameters.);
-        BlockState variable = context.getParamOrNull(LootParameter <BlockState>);
+        IForgeBlockState variable = context.getParamOrNull(LootParameter <IForgeBlockState>);
         if(generatedLoot.contains(Items.CARROT.asItem()))
         {
 
@@ -74,8 +91,12 @@ public class TraitGlazed extends Modifier {
                 generatedLoot.add(new ItemStack(TinkerCommons.bacon));
             }
         }
+
+
+         * /
+
         return generatedLoot;
     }
+    */
 
-     */
 }
