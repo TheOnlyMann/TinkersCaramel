@@ -2,7 +2,7 @@
   "fallbacks": [
     "metal"
   ],
-  "color": "D1F1C1",
+  "color": "FFAE5B",
   "luminosity": 0,
   "generator": {
     "transformer": {

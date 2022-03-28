@@ -3,6 +3,7 @@
   "itemGroup.tinkerscarameltab": "Tinkers Caramel",
   "material.tinkerscaramel.glazed_pig_iron": "Glazed Pig Iron",
   "material.tinkerscaramel.glazed_pig_iron.flavor": "How thick was the glaze though?",
+  "material.tinkerscaramel.glazed_pig_iron.description": "Same as Pig Iron + heals the tool's durability using overslime, heals faster with more levels there is",
   "modifier.tinkerscaramel.glazed": "Glazed",
   "modifier.tinkerscaramel.glazed.flavor": "EXTRA THICC",
   "modifier.tinkerscaramel.glazed.description": "The thick glaze on the material seems to heal the wound of the tool using overslime over time.",
@@ -17,6 +18,8 @@
   "item.tinkerscaramel.glazed_berries": "Glazed Berries",
   "item.tinkerscaramel.carrot_bacon": "Carrot Bacon",
   "item.tinkerscaramel.candied_bacon": "Candied Bacon",
+
+  "item.tinkerscaramel.caramel_fish": "Bowl of Vietnamese Caramel Cod",
 
   "item.tinkerscaramel.molten_sugar_bucket": "Molten Sugar Bucket",
   "item.tinkerscaramel.molten_caramel_bucket": "Caramel Bucket",

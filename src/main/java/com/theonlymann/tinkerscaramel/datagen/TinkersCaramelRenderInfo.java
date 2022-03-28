@@ -15,7 +15,7 @@ public class TinkersCaramelRenderInfo extends AbstractMaterialRenderInfoProvider
 
     @Override
     protected void addMaterialRenderInfo() {
-        buildRenderInfo(TinkersCaramelMaterials.glazed_pig_iron).color(0xD1F1C1).fallbacks("metal");
+        buildRenderInfo(TinkersCaramelMaterials.glazed_pig_iron).color(0xffae5b).fallbacks("metal");
     }
     @Nonnull
     @Override

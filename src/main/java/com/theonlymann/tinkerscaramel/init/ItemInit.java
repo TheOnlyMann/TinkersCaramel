@@ -41,6 +41,9 @@ public class ItemInit {
     public static final RegistryObject<Item> CANDIED_BACON = ITEMS.register("candied_bacon",
             () -> new Item(new Item.Properties().tab(TinkersCaramel.TINKERS_CARAMEL_GROUP)
                     .food(new Food.Builder().nutrition(8).saturationMod(0.6F).build())));
+    public static final RegistryObject<SoupItem> CARAMEL_FISH = ITEMS.register("caramel_fish",
+            () -> new SoupItem(new Item.Properties().tab(TinkersCaramel.TINKERS_CARAMEL_GROUP)
+                    .stacksTo(1).food(new Food.Builder().nutrition(10).saturationMod(0.6F).build())));
 
     //foods-infused caramels
     public static final RegistryObject<CaramelBlockItem> INFUSED_CARAMEL_EARTHSLIME = ITEMS.register("infused_caramel_earthslime",

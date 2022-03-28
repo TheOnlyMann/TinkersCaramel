@@ -1,7 +1,11 @@
 package com.theonlymann.tinkerscaramel.modifier;
 
 import com.theonlymann.tinkerscaramel.init.ItemInit;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.CarrotBlock;
+import net.minecraft.data.IFinishedBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
@@ -13,7 +17,9 @@ import net.minecraft.loot.LootParameters;
 import net.minecraft.loot.LootTable;
 import net.minecraft.util.IItemProvider;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
+import net.minecraftforge.common.extensions.IForgeBlock;
 import net.minecraftforge.common.extensions.IForgeBlockState;
 import slimeknights.tconstruct.common.TinkerTags;
 import slimeknights.tconstruct.library.modifiers.Modifier;
@@ -44,26 +50,45 @@ public class TraitGlazed extends Modifier {
             }
         }
     }
-    /*
+
     @Override
     public List<ItemStack> processLoot(IModifierToolStack tool, int level, List<ItemStack> generatedLoot, LootContext context) {
         // if no damage source, probably not a mob
         // otherwise blocks breaking (where THIS_ENTITY is the player) start dropping bacon
         // we want the opposite
+
         /*
         if (context.hasParam(LootParameters.BLOCK_ENTITY)) {
             return generatedLoot;
         }
-        * /
-        ;
+
+
         if(generatedLoot.stream().anyMatch(stack->Items.CARROT.getDefaultInstance().sameItem(stack)))
         {
             ItemStack carrot = generatedLoot.get(generatedLoot.indexOf(Items.CARROT.asItem()));
-            //ItemStack carrotbacon = new ItemStack();
-            //carrotbacon.setCount(carrot.getCount());
+            ItemStack carrotbacon = new ItemStack();
+            carrotbacon.setCount(carrot.getCount());
             generatedLoot.remove(Items.CARROT.asItem());
             generatedLoot.add(new ItemStack(TinkerCommons.bacon));
         }
+
+
+         */
+        if(context.hasParam(LootParameters.BLOCK_STATE)) {
+            IForgeBlockState blockstate = context.getParamOrNull(LootParameters.BLOCK_STATE);
+            //AbstractBlock.AbstractBlockState carrotblockstate = Blocks.CARROTS.defaultBlockState().setValue(age,7);
+            if (blockstate.getBlockState().is(Blocks.CARROTS) && blockstate.getBlockState().getValue(CarrotBlock.AGE) == 7) {
+                //ItemStack carrotbacon = new ItemStack();
+                //carrotbacon.setCount(carrot.getCount());
+                generatedLoot.remove(Items.CARROT.asItem());
+                generatedLoot.add(new ItemStack(ItemInit.CARROT_BACON.get(), RANDOM.nextInt(level)+1));
+            }
+        }
+        /*
+        else if(generatedLoot.remove(Items.CARROT.asItem()))
+            generatedLoot.add(new ItemStack(ItemInit.CARROT_BACON.get()));
+
+         */
         /*
         context.hasParam(LootParameters.);
         IForgeBlockState variable = context.getParamOrNull(LootParameter <IForgeBlockState>);
@@ -93,10 +118,11 @@ public class TraitGlazed extends Modifier {
         }
 
 
-         * /
+         */
+
+
 
         return generatedLoot;
     }
-    */
 
 }
