@@ -75,12 +75,12 @@ public class TraitGlazed extends Modifier {
 
          */
         if(context.hasParam(LootParameters.BLOCK_STATE)) {
-            IForgeBlockState blockstate = context.getParamOrNull(LootParameters.BLOCK_STATE);
+            BlockState blockstate = context.getParamOrNull(LootParameters.BLOCK_STATE);
             //AbstractBlock.AbstractBlockState carrotblockstate = Blocks.CARROTS.defaultBlockState().setValue(age,7);
-            if (blockstate.getBlockState().is(Blocks.CARROTS) && blockstate.getBlockState().getValue(CarrotBlock.AGE) == 7) {
+            if (blockstate.is(Blocks.CARROTS) && blockstate.getValue(CarrotBlock.AGE) == 7) {
                 //ItemStack carrotbacon = new ItemStack();
                 //carrotbacon.setCount(carrot.getCount());
-                generatedLoot.remove(Items.CARROT.asItem());
+                //generatedLoot.remove(Items.CARROT.asItem());
                 generatedLoot.add(new ItemStack(ItemInit.CARROT_BACON.get(), RANDOM.nextInt(level)+1));
             }
         }
