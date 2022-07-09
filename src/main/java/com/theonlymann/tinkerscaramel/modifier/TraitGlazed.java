@@ -81,7 +81,9 @@ public class TraitGlazed extends Modifier {
                 //ItemStack carrotbacon = new ItemStack();
                 //carrotbacon.setCount(carrot.getCount());
                 //generatedLoot.remove(Items.CARROT.asItem());
-                generatedLoot.add(new ItemStack(ItemInit.CARROT_BACON.get(), RANDOM.nextInt(level)+1));
+                int looting = context.getLootingModifier();
+                if (RANDOM.nextInt(48 / level) <= looting)
+                    generatedLoot.add(new ItemStack(ItemInit.CARROT_BACON.get()));
             }
         }
         /*
