@@ -1,0 +1,52 @@
+{
+  "comment0": "杂项",
+  "itemGroup.tinkerscarameltab": "匠魂的焦糖",
+  "material.tinkerscaramel.glazed_pig_iron": "带釉生铁",
+  "material.tinkerscaramel.glazed_pig_iron.flavor": "这釉到底有多厚？",
+  "modifier.tinkerscaramel.glazed": "釉面",
+  "modifier.tinkerscaramel.glazed.flavor": "超厚涂层",
+  "modifier.tinkerscaramel.glazed.description": "随着时间的推移，材料上厚厚的釉似乎会修复带有黏液覆层的工具。",
+  "death.attack.tinkerscaramel.bread_death": "%1$s尝试一次食用9片面包并尝到了后果",
+  "death.attack.tinkerscaramel.bread_death.player": "%1$s一次食用9片面包后在逃离%2$s时突发心脏病",
+
+  "comment1": "物品",
+  "item.tinkerscaramel.sugar_shard": "糖碎片",
+  "item.tinkerscaramel.caramel_crystal": "焦糖结晶",
+
+  "item.tinkerscaramel.caramel_apple": "焦糖苹果",
+  "item.tinkerscaramel.glazed_berries": "釉面甜浆果",
+  "item.tinkerscaramel.carrot_bacon": "胡萝卜培根",
+  "item.tinkerscaramel.candied_bacon": "蜜饯培根",
+
+  "item.tinkerscaramel.molten_sugar_bucket": "熔融糖桶",
+  "item.tinkerscaramel.molten_caramel_bucket": "焦糖桶",
+  "item.tinkerscaramel.molten_caramel_blood_bucket": "血焦糖桶",
+  "item.tinkerscaramel.molten_caramel_earthslime_bucket": "黏液焦糖桶",
+  "item.tinkerscaramel.molten_caramel_enderslime_bucket": "末影黏液焦糖桶",
+  "item.tinkerscaramel.molten_caramel_magma_cream_bucket": "岩浆膏焦糖桶",
+  "item.tinkerscaramel.molten_caramel_skyslime_bucket": "碧空黏液焦糖桶",
+
+  "comment2": "方块",
+  "block.tinkerscaramel.caramel_block": "焦糖方块",
+  "block.tinkerscaramel.sugar_glass": "糖制玻璃",
+  "block.tinkerscaramel.sugar_clear_glass": "通透糖制玻璃",
+  "block.tinkerscaramel.sugar_glass_pane": "糖制玻璃板",
+
+  "block.tinkerscaramel.infused_caramel_earthslime": "黏液焦糖",
+  "block.tinkerscaramel.infused_caramel_skyslime": "碧空黏液焦糖",
+  "block.tinkerscaramel.infused_caramel_blood": "血焦糖",
+  "block.tinkerscaramel.infused_caramel_ichor": "灵浆焦糖",
+  "block.tinkerscaramel.infused_caramel_enderslime": "末影黏液焦糖",
+  "block.tinkerscaramel.infused_caramel_magma_cream": "岩浆膏焦糖",
+
+  "block.tinkerscaramel.bread_nine": "一叠面包",
+  "block.tinkerscaramel.caramel_cake": "肉桂卷",											  
+  "comment3": "流体",
+  "fluid.tinkerscaramel.molten_sugar": "糖浆",
+  "fluid.tinkerscaramel.molten_caramel": "熔融焦糖",
+  "fluid.tinkerscaramel.molten_caramel_blood": "熔融血焦糖",
+  "fluid.tinkerscaramel.molten_caramel_earthslime": "熔融黏液焦糖",
+  "fluid.tinkerscaramel.molten_caramel_enderslime": "熔融末影黏液焦糖",
+  "fluid.tinkerscaramel.molten_caramel_magma_cream": "熔融岩浆膏焦糖",
+  "fluid.tinkerscaramel.molten_caramel_skyslime": "熔融碧空黏液焦糖"
+}
